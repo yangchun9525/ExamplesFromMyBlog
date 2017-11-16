@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -21,8 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/snap"
-                />
+                android:src="@drawable/snap" />
 
         </com.kyleduo.alipayhome.widgets.APSnapView>
 
@@ -35,7 +33,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/grid"/>
+                android:src="@drawable/grid" />
 
         </LinearLayout>
 
@@ -43,36 +41,47 @@
             android:id="@id/alipay_bar"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="#2484CF"
-            >
+            android:background="#2484CF">
 
             <ImageView
                 android:id="@+id/bar2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/bar2"/>
+                android:src="@drawable/bar2" />
 
             <ImageView
                 android:id="@+id/bar1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/bar1"/>
+                android:src="@drawable/bar1" />
         </com.kyleduo.alipayhome.widgets.APBarView>
     </com.kyleduo.alipayhome.widgets.APHeaderView>
 
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/alipay_srl"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="com.kyleduo.alipayhome.widgets.APScrollingBehavior"
-        >
+        android:orientation="vertical"
+        app:layout_behavior="com.kyleduo.alipayhome.widgets.APScrollingBehavior">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/alipay_rv"
+        <Button
+            android:id="@+id/btn"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:overScrollMode="never"/>
+            android:layout_height="50dp"
+            android:text="button" />
 
-    </android.support.v4.widget.SwipeRefreshLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/alipay_srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/alipay_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
