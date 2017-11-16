@@ -10,8 +10,8 @@ This Repository contains source code of some demos in my blog. -->  [https://kyl
 
 How to implement perfect translucent bar in >= 4.4 and why.
 
-![cover](https://static.kyleduo.com/blog/image/digging-translucentstatusbar/cover.png)
-
+![cover](https://github.com/yangchun9525/ExamplesFromMyBlog/blob/master/AlipayHome/img/Screenshot_20171116-112145.png)
+https://github.com/yangchun9525/ExamplesFromMyBlog/blob/master/AlipayHome/img/Screenshot_20171116-112145.png
 
 
 
